@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array_Test4</title>
+<script type="text/javascript">
+	var greenLine=["사당","방배","교대","강남"];
+	var yelloLine=["수서","모란","정자","미금"];
+	greenLine[10]="잠실";
+	
+	var twoLine=greenLine.concat(yelloLine);
+	document.write(twoLine,"<br/>");
+	document.write(twoLine.join("-"),"<br/>");
+	greenLine.pop();
+	document.write(greenLine,"<br/>");
+	greenLine.push("삼성");
+	document.write(greenLine,"<br/>");
+	greenLine.shift();
+	document.write(greenLine,"<br/>");
+	greenLine.unshift("신도림");
+	document.write(greenLine,"<br/>");
+	
+	document.write(greenLine.length);
+</script>
+</head>
+<body>
+
+</body>
+</html>

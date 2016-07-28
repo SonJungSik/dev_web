@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="">
+		<table>
+		<tr>
+			<td>ID</td>
+			<td>
+				<input type="text" name="member_name" size="20" maxlength="9">
+			</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>
+				<input type="password" name="member_pwd" size="20" maxlength="9">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="button" name="btn_login" value="Log In">
+				<input type="button" name="btn_cxl" value="Cancel">
+			</td>
+		</tr>
+		</table>
+		<br/>
+		<select name="Job">
+			<option value="">Job Option</option>
+			<option value="00" selected="selected">Student</option>
+			<option value="01">Salary Man</option>
+			<option value="03">Other</option>
+		</select>
+		<br/>
+		<select>
+			<option value="00">Hobby</option>
+			<option value="01">Reading</option>
+			<optgroup label="sport">
+				<option value="02">Base ball</option>
+				<option value="03">Soccer</option>
+			</optgroup>
+			<option value="04">Listening Music</option>
+		</select>
+		<br/> 
+		<input type="checkbox" name="chk_info" value="00" checked="checked">HTML
+		<input type="checkbox" name="chk_info" value="01">CSS
+		<input type="checkbox" name="chk_info" value="02">Web Design
+		<input type="checkbox" name="chk_info" value="03">Other
+		<br/>
+		<input type="radio" name="rdo_sex" value="01" checked="checked">Female
+		<input type="radio" name="rdo_sex" value="02">Male
+		<br>
+		<input type="reset" value="Reset">
+		<input type="submit" value="Submit">
+		
+	</form>
+</body>
+</html>

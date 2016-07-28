@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Regular_Expression_Test_2</title>
+<script type="text/javascript">
+	var userName=prompt("What is your name?", "");
+	reg1=/^[가-힣]|[a-z]{2,10}$/;
+	while(true){
+		if(reg1.test(userName)){
+			break;
+		}
+		alert("The form of Name is not suitable");
+		userName(prompt("What is your Name?", ""));
+	}
+	
+	var userCell=prompt("What is your phone#?");
+	reg2=/^(010|016|011)\d{3,4}\d{4}$/;
+	while(true){
+		if(reg2.test(userCell)){
+			break;
+		}
+		alert("The form of Phone# is not suitable");
+		userCell=prompt("What is your phone#?");
+	}
+	
+	var userEmail=prompt("What is your Email address?");
+	reg3=/^\w{5,12}@[a-z]{2,10}[\.][a-z]{2,3}[\.]?[a-z]{0,2}$/;
+	while(true){
+		if(reg3.test(userEmail)) {
+			break;
+		}
+		alert("The form of e-mail address is not suitable");
+		userEmail=prompt("What is your e-mail address?");
+	}
+	
+	document.write(userName.toUpperCase(),"<br/>");
+	document.write(userCell,"<br/>");
+	document.write(userEmail.toUpperCase(),"<br/>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

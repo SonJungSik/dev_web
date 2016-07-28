@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var t=new Date();
+	
+	var nowMonth=t.getMonth();	// 현재 월의 정보를 반환하며, 현재 월보다 한 달 적게 나옵니다.
+	var nowDate=t.getDate();	// 현재 일자의 정보를 반환합니다.
+	var nowDay=t.getDay();		// 현재 요일의 정보를 반환합니다.(0:일요일 ~ 6:토요일)
+	
+	document.write("현재 월 : "+nowMonth, "<br/>");
+	document.write("현재 일 : "+nowDate, "<br/>");
+	document.write("현재 요일 : "+nowDay,"<br/>");
+	
+	var m=new Date(2002,4,31);	// 2002(5,31) 월드컵 날짜 객체를 생성
+	
+	var theMonth=m.getMonth();	// 날짜 객체에서 월 정보만 가져옵니다.
+	var theDate=m.getDate();	// 날짜 객체에서 일 정보만 가져옵니다.
+	var theDay=m.getDay();		// 날짜 객체에서 요일 정보만 가져옵니다.
+	
+	document.write("2002년 월드컵 개최 월 : "+theMonth, "<br/>");
+	document.write("2002년 월드컵 개최 일 : "+theDate,"<br/>");
+	document.write("2002년 월드컵 개최 요일 : "+theDay, "<br/>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

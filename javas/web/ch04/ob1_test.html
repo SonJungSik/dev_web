@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+// 생성된 객체를 변수 tv가 참조	
+	var tv=new Object();
+	
+// 	tv 객체의 속성을 생성
+	tv.width="30cm";
+	tv.height="25cm";
+	tv.weight="20kg";
+	tv.color="white";
+	
+//	tv객체의 off기능(method)을 생성함.
+	tv.off=function(){
+		document.write("Power off","<br/>");
+	}
+	document.write(tv.width,"<br/>");
+	document.write(tv.height,"<br/>");
+	document.write(tv.weight,"<br/>");
+	document.write(tv.color,"<br/>");
+	
+//	tv에 off 기능을 실행	
+	tv.off();
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

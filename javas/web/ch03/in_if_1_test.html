@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log in page</title>
+<script type="text/javascript">
+//<![CDATA[
+     var id="carriezz"; //id
+     var pw="112233";	//password
+     var user_id=prompt("what is your ID?", "");
+     var user_pw=prompt("what is your Password?","");
+     
+     if(id==user_id){
+    	 if(pw==user_pw){
+    		 document.write("Welcome "+user_id);
+    	 }else{
+    		 alert("Password is not suitable");
+    		 location.reload();
+    	 }
+     }else{
+    	 alert("ID is not exist");
+    	 location.reload();
+     }
+//]]>
+</script>
+</head>
+<body>
+
+</body>
+</html>

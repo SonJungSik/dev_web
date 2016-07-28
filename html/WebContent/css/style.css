@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+h1 {
+	font-family: '맑은 고딕';
+	font-size: 20px;
+}
+
+p {
+	font-family: '궁서';
+	 font-size: 40px;
+	color:#800000;
+}

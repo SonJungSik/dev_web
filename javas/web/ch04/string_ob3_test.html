@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>String_Test3</title>
+<script type="text/javascript">
+	var userEmail=prompt("What is your e-mail address?", "");
+	var arrUrl=[".co.kr",".com",".net",".or.kr",".go,kr"];
+	
+	var check1=false;
+	var check2=false;
+	
+	if(userEmail.indexOf("@")>0){
+		check1=true;
+	}
+	
+	for(var i=0; i<arrUrl.length; i++){
+		if(userEmail.indexOf(arrUrl[i])>0){
+			check2=true;
+		}
+	}
+	
+	if(check1&&check2){
+		document.write(userEmail);
+	}else{
+		alert("The form of e-mail is not suitable.");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
